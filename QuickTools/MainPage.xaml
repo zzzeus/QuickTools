@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="QuickTools.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:QuickTools"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/backgrounds/wallpaper2.jpg" Opacity="0.6"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Button HorizontalAlignment="Center" FontSize="36" Width="220" Click="Ruby_Click">Ruby</Button>
+        <Button HorizontalAlignment="Center" FontSize="36" Grid.Column="1" Width="220">No Lines</Button>
+        <Button HorizontalAlignment="Center" FontSize="36" Grid.Row="1" Width="220">Wifi</Button>
+        <Button HorizontalAlignment="Center" FontSize="36" Grid.Row="1" Grid.Column="1" Width="220">Wallpapers</Button>
+    </Grid>
+    
+</Page>
